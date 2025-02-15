@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("header").appendChild(themeToggle);
 
     themeToggle.addEventListener("click", () => {
-        document.body.classList.toggle("light-mode");
+        document.body.classList.toggle("theme-toggle");
         localStorage.setItem("theme", document.body.classList.contains("light-mode") ? "light" : "dark");
     });
 
