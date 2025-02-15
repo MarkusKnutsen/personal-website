@@ -1,8 +1,16 @@
-/* Default Light Mode Styles */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
 body {
     background-color: #ffffff;
     color: #000000;
-    font-family: 'Arial', sans-serif; /* Added font-family */
+    line-height: 1.6;
+    padding: 20px;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -12,18 +20,17 @@ header {
     background-color: #f0f0f0;
     border-radius: 8px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 h1 {
     font-size: 2rem;
-    color: #333;
-    font-family: 'Georgia', serif; /* Added font for headings */
+    color: #007bff;
 }
 
 h2 {
-    color: #555;
+    color: #333;
     margin-bottom: 10px;
-    font-family: 'Georgia', serif;
 }
 
 section {
@@ -31,6 +38,15 @@ section {
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+li {
+    padding: 5px 0;
 }
 
 a {
@@ -50,31 +66,30 @@ footer {
     border-radius: 8px;
 }
 
-/* Dark Mode (theme-change class) */
-.theme-change {
+/* Dark Mode */
+.dark-mode {
     background-color: #0d1117;
     color: #c9d1d9;
-    font-family: 'Arial', sans-serif; /* Ensuring font applies in dark mode too */
 }
 
-.theme-change header {
-    background-color: #161b22;
-}
-
-.theme-change section {
+.dark-mode header, .dark-mode section, .dark-mode footer {
     background: #161b22;
 }
 
-.theme-change a {
+.dark-mode h1 {
     color: #58a6ff;
 }
 
-.theme-change a:hover {
-    color: #79c0ff;
+.dark-mode h2 {
+    color: #8b949e;
 }
 
-.theme-change footer {
-    background: #161b22;
+.dark-mode a {
+    color: #58a6ff;
+}
+
+.dark-mode a:hover {
+    color: #79c0ff;
 }
 
 /* Theme Toggle Button */
@@ -95,11 +110,11 @@ footer {
     background: #0056b3;
 }
 
-.theme-change #theme-toggle {
+.dark-mode #theme-toggle {
     background: #58a6ff;
     color: #0d1117;
 }
 
-.theme-change #theme-toggle:hover {
+.dark-mode #theme-toggle:hover {
     background: #79c0ff;
 }
