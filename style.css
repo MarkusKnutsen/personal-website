@@ -1,78 +1,85 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
+/* Default Light Mode Styles */
 body {
-    background-color: #0d1117;
-    color: #c9d1d9;
-    line-height: 1.6;
-    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
     transition: background-color 0.3s, color 0.3s;
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #161b22;
+    background-color: #f0f0f0;
     border-radius: 8px;
     margin-bottom: 20px;
-    position: relative;
 }
 
 h1 {
     font-size: 2rem;
-    color: #58a6ff;
+    color: #333;
 }
 
 h2 {
-    color: #8b949e;
+    color: #555;
     margin-bottom: 10px;
 }
 
 section {
-    background: #161b22;
+    background: #f8f8f8;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 10px;
-}
-
-li {
-    padding: 5px 0;
-}
-
 a {
-    color: #58a6ff;
+    color: #007bff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #79c0ff;
+    color: #0056b3;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background: #161b22;
+    background: #f0f0f0;
     border-radius: 8px;
 }
 
-/* Dark Mode Toggle Button */
+/* Dark Mode (theme-change class) */
+.theme-change {
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+.theme-change header {
+    background-color: #161b22;
+}
+
+.theme-change section {
+    background: #161b22;
+}
+
+.theme-change a {
+    color: #58a6ff;
+}
+
+.theme-change a:hover {
+    color: #79c0ff;
+}
+
+.theme-change footer {
+    background: #161b22;
+}
+
+/* Theme Toggle Button */
 #theme-toggle {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: #58a6ff;
-    color: #0d1117;
+    background: #007bff;
+    color: #ffffff;
     border: none;
     padding: 8px 12px;
     border-radius: 5px;
@@ -81,5 +88,14 @@ footer {
 }
 
 #theme-toggle:hover {
+    background: #0056b3;
+}
+
+.theme-change #theme-toggle {
+    background: #58a6ff;
+    color: #0d1117;
+}
+
+.theme-change #theme-toggle:hover {
     background: #79c0ff;
 }
