@@ -2,6 +2,7 @@
 body {
     background-color: #ffffff;
     color: #000000;
+    font-family: 'Arial', sans-serif; /* Added font-family */
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -16,11 +17,13 @@ header {
 h1 {
     font-size: 2rem;
     color: #333;
+    font-family: 'Georgia', serif; /* Added font for headings */
 }
 
 h2 {
     color: #555;
     margin-bottom: 10px;
+    font-family: 'Georgia', serif;
 }
 
 section {
@@ -51,6 +54,7 @@ footer {
 .theme-change {
     background-color: #0d1117;
     color: #c9d1d9;
+    font-family: 'Arial', sans-serif; /* Ensuring font applies in dark mode too */
 }
 
 .theme-change header {
