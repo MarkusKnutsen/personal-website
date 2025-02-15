@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     themeToggle.addEventListener("click", () => {
         document.body.classList.toggle("theme-toggle");
-        localStorage.setItem("theme", document.body.classList.contains("light-mode") ? "light" : "dark");
+        localStorage.setItem("theme", document.body.classList.contains("theme-toggle") ? "light" : "dark");
     });
 
     // Load saved theme preference
     if (localStorage.getItem("theme") === "light") {
-        document.body.classList.add("light-mode");
+        document.body.classList.add("theme-toggle");
     }
 });
